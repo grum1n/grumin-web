@@ -7,4 +7,6 @@ grumin web
 Lora :wght@700
 Open+Sans & Roboto :wght@400;700&
 
-
+##
+<i class="fas fa-plus">
+<i class="fa fa-bars"></i>

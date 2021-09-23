@@ -120,24 +120,130 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
 }
 .menu-button a:hover{color: var(--teal);}
 
-
 /*HERO*/
 .hero {
-    background-image: url("");
-    background-position: center;
+    padding: 305px 0 0;
+    background-color: var(--teal);
+    background-size: 100% 1076px;
     background-repeat: no-repeat;
-    background-size: cover;
+    color: var(--white);
     position: relative;
 }
-.hero-grid-box {
-    padding: 180px 20px 51px;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    grid-template-areas: 
-    "col-1 col-2"
+#particles-js{
+    top: 0;
+    width: 100%;
+    position: absolute;
 }
+.hero .hero-text{
+    text-align: left;
+    padding-left: 100px;
+
+}
+.hero h1{
+    margin: 0;
+    padding: 10px;
+    max-width: 770px;
+    font-family: var(--poppins-font);
+    font-size: 4.75rem;
+    font-weight: 700;
+    line-height: 93px;
+    background-color: var(--gray-rgba-0);
+    border-radius: 3px;
+}
+.hero p {
+    margin: 12px 0 0;
+    font-size: 1.1875rem;
+    line-height: 31px;
+    max-width: 650px;
+}
+.hero .hero-text a{
+    margin: 50px 0 100px;
+    padding: 22px 60px;
+    width: 220px;
+    display: block;
+    color: var(--white);
+    background-color: var(--gray-rgba-0);
+    border: 1px solid var(--white);
+    font-family: var(--poppins-font);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 22px;
+    cursor: pointer;
+}
+.hero .hero-text a:hover, .hero .hero-text a:active{
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--white);
+}
+.hero > div > i{font-size: 3rem;}
+.hero a.language-text{
+    color: var(--white);
+    font-family: var(--poppins-font);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 22px;
+    cursor: pointer;
+}
+.hero a.language-text:hover, .hero a.language-text:active{
+    color: var(--black);
+}
+/*hero-bottom*/
+.hero ul.hero-bottom {
+    list-style-type: none;
+    max-width:1200px;
+    margin: 50px auto 0; 
+    padding:0 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero-bottom li {
+    margin: 15px;
+    padding: 20px;
+    max-width: 349px;
+    height: 389px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left; 
+    box-shadow: 0 0 20px var(--gray-1e);
+}
+.hero-bottom img {display: block;}
+.hero-bottom h4{
+    margin: 19px 0 0;
+    font-family: var(--poppins-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 40px;
+    color: var(--black);
+}
+.hero-bottom p{
+    margin: 13px 0 0;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    font-size: 1.1875rem;
+    line-height: 34px;
+    color: var(--gray-6c);
+}
+.hero-bottom span{
+    padding-left: 25px;
+    font-family: var(--poppins-font);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 22px;
+}
+.hero-bottom a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--blue);
+}
+.hero-bottom a:hover, .hero-bottom a:active{
+    color: var(--black);
+}
+.hero img{display: block;}
+
 
 /*MEDIA SCREEN!!!!*/
 /*MEDIA SCREEN!!!!*/
@@ -148,4 +254,45 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
 @media screen and (max-width: 1000px) {
      /*HEADER*/
     .top-nav {display: none;}
+     /*HERO*/
+     .hero {padding: 200px 0 0;}
 }
+@media screen and (max-width: 650px) {
+    /*PAGES-top-section*/
+    .pages-top-section h1{
+        padding: 20px 0;
+    }
+    .pages-top-section .container-big-text p{
+        padding: 0;
+    }
+    /*HERO*/
+    .hero .hero-text{padding-left: 20px;}
+     /*How it works section */
+     .how-it-works ul{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "col-1"
+        "col-2"
+        "col-3"
+        "col-4"
+    }
+} 
+@media screen and (max-width: 470px) {
+    /*HERO*/
+    .hero h1{font-size: 3.4rem;line-height: 68px;}
+    .hero .hero-text a{
+        margin:50px auto;
+    }
+} 
+@media screen and (max-width: 400px){
+    /*HERO*/
+    .hero-bottom li {height: 100%;}
+    .hero-bottom a{margin-top: 35px;}
+    .hero h1{padding: 0;}
+}
+@media screen and (max-width: 350px) {
+    /*HERO*/
+    .hero .hero-text{padding-left: 10px;}
+    
+} 
