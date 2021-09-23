@@ -10,6 +10,7 @@
     --teal-d1: #051f1f;
     --teal-d2: #051313;
     --teal-d3: #021111;
+    --gray-c2:#202423;
     --gray-d8:#796d6d2d;
     --color-1: rgba(0,0,0,0.4);
     --color-2: rgba(1, 15, 13, 0.4);
@@ -279,10 +280,40 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
 .contacts p {
     color:var(--teal-d3);
     font-family: var(--font-roboto);
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 2rem;
     line-height: 24px;
-    margin: 39px auto 0;
+    margin: 100px auto 50px;
+}
+.contacts  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contacts  li {
+    margin: 15px;
+    padding: 50px;
+    min-width: 330px;
+    height: 100%;
+    color: var(--teal-d3);
+    background-color: var(--white);
+    text-align: left; 
+    box-shadow: 0 0 20px var(--color-1);
+    font-family: var(--font-lora);
+    font-weight: 700;
+}
+.contacts  h4{
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 1.6875rem;
+    line-height: 40px;
+}
+.contacts  h5{
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 34px;
+    color: var(--gray-c2);
 }
 
 /*MEDIA SCREEN!!!!*/
@@ -323,6 +354,11 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     .hero h1{font-size: 3.4rem;line-height: 68px;}
     .hero .hero-text a{
         margin:50px auto;
+    }
+    /*Contacts*/
+    .contacts li{
+        padding: 50px 20px;
+        min-width: 280px;
     }
 } 
 @media screen and (max-width: 400px){
