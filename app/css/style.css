@@ -3,6 +3,7 @@
 *::before,
 *::after {box-sizing: border-box;}
 :root {
+    --black:#000000;
     --teal: #008080;
     --teal-2: rgba(7, 73, 64, 0.8);
     --white: #ffffff; 
@@ -359,6 +360,25 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     background-color: var(--gray-c2);
     color: var(--white);
 }
+
+/*FOOTER*/
+footer {
+    color: var(--white);
+    padding-top: 59px;
+    padding-bottom: 59px;
+    background-color: #051313;
+}
+footer img{display: block;width: 160px;}
+footer a{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 25px;
+    cursor: pointer;
+}
+footer a:hover,footer a:active{color: var(--white);}
+footer i {padding: 0 20px;font-size: 2rem;}
+
 /*MEDIA SCREEN!!!!*/
 /*MEDIA SCREEN!!!!*/
 /*MEDIA SCREEN!!!!*/
