@@ -9,6 +9,8 @@
     --teal-g06: #7eb3b3;
     --teal-d1: #051f1f;
     --teal-d2: #051313;
+    --teal-d3: #021111;
+    --gray-d8:#796d6d2d;
     --color-1: rgba(0,0,0,0.4);
     --color-2: rgba(1, 15, 13, 0.4);
     --font-roboto:'Roboto', sans-serif;
@@ -52,7 +54,20 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
 .flex-col {display: flex;flex-direction: column;}
 .flex-between {display: flex;justify-content: space-between;}
 
-
+.section-heading h1{
+    font-family: var(--font-lora);
+    font-weight: 700;
+    font-size: 3.375rem;
+    line-height: 69px;
+    color: var(--teal-d2);
+}
+.section-heading h1:after {
+    content:"";
+    display: block;
+    width: 100px;
+    border-top: 3px solid var(--teal);
+    margin: 22px auto 32px;
+}
 /*HEADER*/
 .site-header .container {display:flex;justify-content: space-between; align-items: center;}
 .logo > a{
@@ -242,16 +257,32 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     font-size: 2rem;
     border:  2px solid var(--teal-d2);
     outline: none; 
-    background-color: var(--color-1); 
+    background-color: var(--teal-2); 
     color: var(--white);
     cursor: pointer; 
     padding: 6px 15px; 
     border-radius: 50%; 
 } 
 #myBtn:hover {
-    background-color: var(--orange);
+    background-color: var(--teal);
     color: var(--white);
-    border: 2px solid var(--white);
+    border: 2px solid var(--teal);
+}
+
+/*contacts*/
+.contacts {
+    text-align: center;
+    padding-top: 123px;
+    padding-bottom: 100px;
+    background-color: var(--gray-d8);
+}
+.contacts p {
+    color:var(--teal-d3);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 24px;
+    margin: 39px auto 0;
 }
 
 /*MEDIA SCREEN!!!!*/
