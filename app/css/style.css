@@ -397,6 +397,7 @@ footer a{
 footer a:hover,footer a:active{color: var(--white);}
 footer i {padding: 0 20px;font-size: 2rem;}
 
+
 /*MEDIA SCREEN!!!!*/
 /*MEDIA SCREEN!!!!*/
 /*MEDIA SCREEN!!!!*/
@@ -444,6 +445,18 @@ footer i {padding: 0 20px;font-size: 2rem;}
     .contacts  li {
         margin: 15px 0;
         padding: 30px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .contacts .form-table > form > p{
+        text-align: center;
+    }   
+    footer .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer a, footer span{
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 350px) {
