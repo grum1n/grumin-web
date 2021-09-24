@@ -311,6 +311,68 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     line-height: 34px;
     color: var(--gray-c2);
 }
+/*contacts form*/
+.contacts .form-table {
+    padding: 80px 15px;
+    text-align: left;
+    width: 750px;
+}
+.contacts .form-table > form > p{
+    text-align: left;
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 1.6875rem;
+    line-height: 40px;
+}
+.contacts .form-table input[type=text], .contacts .form-table input[type=email]{
+    margin-top: 30px;
+    background-color: var(--white);
+    color:var(--gray-d);
+    font-family: var(--font-roboto);
+    font-size: 1.25rem;
+    width: 100%;
+    height: 58px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--blue-g7);
+    border-radius: 3px;
+}
+.contacts .form-table textarea {
+    margin-top: 30px;
+    background-color: var(--white);
+    color:var(--gray-d);
+    font-family: var(--font-roboto);
+    font-size: 1.25rem;
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--blue-g7);
+    border-radius: 3px;
+}
+::placeholder {
+    color: var(--gray);
+    font-size: 1em;
+    font-family: var(--font-roboto);
+}
+.contacts button {
+    text-align: center;
+    margin-top: 30px;
+    padding: 8px 30px;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 40px;
+    color: var(--white);
+    background-color: var(--blue-g06);
+    border: 1px solid var(--blue-g7);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contacts button:hover {
+    color: var(--gray);
+    background-color: var(--blue-g7);
+}
 /*FOOTER*/
 footer {
     color: var(--gray);
@@ -347,11 +409,16 @@ footer i {padding: 0 20px;font-size: 2rem;}
      /*HERO*/
      .hero {padding: 200px 0 0;}
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 780px){
     /*contacts*/
     .contacts {
         padding-top: 70px;
         padding-bottom: 50px;
+    }/*contacts form*/
+    .contacts .form-table {
+        padding: 70px 15px;
+        text-align: center;
+        width: 100%;
     }
 }
 @media screen and (max-width: 650px) {
