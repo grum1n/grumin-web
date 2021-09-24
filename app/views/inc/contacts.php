@@ -22,7 +22,7 @@
         </ul>
     </div>
     <div class="container form-table">
-        <form action="src/app.php" method="post" >
+        <form action="app/views/inc/src/app.php" method="post" >
             <p>You Can Write Us</p>
             <input type="text" name="vardas" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
