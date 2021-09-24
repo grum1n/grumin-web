@@ -274,6 +274,71 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     color: var(--gray);
     border: 2px solid var(--blue-g7);
 }
+
+/*examples gallery*/
+.examples{
+    background-color: var(--blue);
+    padding: 20px auto;
+}
+/* START OF ACCORDION */
+.examples .accordion {
+    margin: 0 0 50px;
+    text-align: center;
+    background-color: var(--blue-g06);
+    color:var(--white);
+    cursor: pointer;
+    padding: 19px;
+    width: 210px;
+    border:none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family:var(--font-roboto);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.accordion:active, .accordion:hover {
+    background-color: var(--blue-g7);
+    color:var(--gray);
+}
+/* .accordion:after {
+    content: '\002B';
+    color: var(--orange);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+} */
+.panel {
+    margin: 0;
+    color:var(--gray-6);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.panel ul {
+    margin: 0;
+    padding: 0;
+}
+.panel li {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   font-size: 1.25rem;
+   line-height: 19px;
+}
+.panel .det-text-pad {
+    padding: 10px;
+}
+
+/* END OF ACCORDION */
 /*contacts*/
 .contacts {
     text-align: center;
@@ -355,6 +420,8 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     font-size: 1em;
     font-family: var(--font-roboto);
 }
+:-ms-input-placeholder { color:var(--gray);}/* Internet Explorer 10-11 */
+::-ms-input-placeholder { color: var(--gray);}/* Microsoft Edge */
 .contacts button {
     text-align: center;
     margin-top: 30px;
