@@ -4,6 +4,7 @@
 *::after {box-sizing: border-box;}
 :root {
     --black:#000000;
+    --gray-d:#050e13;
     --blue: #11162efa;
     --blue-2: rgba(7, 28, 73, 0.8);
     --white: #ffffff; 
@@ -11,6 +12,7 @@
     --blue-d1: #050f1f;
     --blue-d2: #050d13;
     --teal-d3: #021111;
+    --gray: #9c9a9a;
     --gray-c2:#202324;
     --gray-d8:#796d6d2d;
     --color-bg:  #101426b2;
@@ -277,17 +279,23 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
 
 /*FOOTER*/
 footer {
-    color: var(--white);
+    color: var(--gray);
     padding-top: 59px;
     padding-bottom: 59px;
-    background-color: #051313;
+    background-color: var(--gray-d);
+    align-items: center;
 }
-footer img{display: block;width: 160px;}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 footer a{
-    color: var(--white);
-    font-weight: 400;
-    font-size: 1.0625rem;
-    line-height: 25px;
+    color: var(--gray);
+    font-weight: 700;
+    font-family: var(--font-lora);
+    font-size: 2rem;
+    line-height: 28px;
     cursor: pointer;
 }
 footer a:hover,footer a:active{color: var(--white);}
@@ -306,26 +314,14 @@ footer i {padding: 0 20px;font-size: 2rem;}
      .hero {padding: 200px 0 0;}
 }
 @media screen and (max-width: 650px) {
-    /*PAGES-top-section*/
-    .pages-top-section h1{
-        padding: 20px 0;
-    }
-    .pages-top-section .container-big-text p{
-        padding: 0;
-    }
     /*HERO*/
-    .hero .hero-text{padding-left: 20px;}
+    .hero .hero-text{text-align:center; padding-left: 20px;}
 } 
 @media screen and (max-width: 470px) {
     /*HERO*/
     .hero h1{font-size: 3.4rem;line-height: 68px;}
     .hero .hero-text a{
         margin:50px auto;
-    }
-    /*Contacts*/
-    .contacts li{
-        padding: 50px 20px;
-        min-width: 280px;
     }
 } 
 @media screen and (max-width: 400px){
