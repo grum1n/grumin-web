@@ -22,11 +22,12 @@
         </ul>
     </div>
     <div class="container form-table">
-        <form action="action.php">
+        <form action="src/app.php" method="post" >
             <p>You Can Write Us</p>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Your email">
-            <textarea placeholder="Message"></textarea>
+            <input type="text" name="vardas" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="text" name="subject" placeholder="Title" required>
+            <textarea name="message" placeholder="Message" required></textarea>
             <button name="submit" type="submit" id="test">SEND MESSAGE</button>
         </form>
     </div>
