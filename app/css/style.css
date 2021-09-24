@@ -4,17 +4,19 @@
 *::after {box-sizing: border-box;}
 :root {
     --black:#000000;
-    --teal: #008080;
-    --teal-2: rgba(7, 73, 64, 0.8);
+    --blue: #11162efa;
+    --blue-2: rgba(7, 28, 73, 0.8);
     --white: #ffffff; 
-    --teal-g06: #7eb3b3;
-    --teal-d1: #051f1f;
-    --teal-d2: #051313;
+    --blue-g06: #7e8ab3;
+    --blue-d1: #050f1f;
+    --blue-d2: #050d13;
     --teal-d3: #021111;
-    --gray-c2:#202423;
+    --gray-c2:#202324;
     --gray-d8:#796d6d2d;
+    --color-bg:  #101426b2;
     --color-1: rgba(0,0,0,0.4);
-    --color-2: rgba(1, 15, 13, 0.4);
+    --color-19: rgba(2, 7, 36, 0.966);
+    --color-2: rgba(1, 12, 15, 0.4);
     --font-roboto:'Roboto', sans-serif;
     --font-lora:'Lora', sans-serif;
     --font-openSans:'Open Sans', sans-serif;
@@ -39,12 +41,12 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
 .col-10 {grid-area: col-10;}
 
 .site-header {
-  background-color:var(--color-1);
+  background-color:var(--color-bg);
   position: fixed;
   display: block;
   width: 100%;
   z-index:100;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .row {text-align: center;}
 .container {
@@ -61,13 +63,13 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     font-weight: 700;
     font-size: 3.375rem;
     line-height: 69px;
-    color: var(--teal-d2);
+    color: var(--blue-d2);
 }
 .section-heading h1:after {
     content:"";
     display: block;
     width: 100px;
-    border-top: 3px solid var(--teal);
+    border-top: 3px solid var(--blue);
     margin: 22px auto 32px;
 }
 /*HEADER*/
@@ -80,10 +82,10 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     line-height: 52px;
     cursor: pointer;
 }
-.logo > a:hover{color: var(--teal-d1);}
+.logo > a:hover{color: var(--blue-d1);}
 .top-nav a {
     color: var(--white);
-    background-color: var(--teal-d1);
+    background-color: var(--blue-d1);
     font-family: var(--font-roboto);
     font-weight: 400;
     font-size: 1.5rem;
@@ -107,7 +109,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     z-index: 100; 
     top: 0; 
     right: 0;
-    background-color: var(--teal);
+    background-color: var(--blue);
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s;
@@ -122,7 +124,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     position: relative;
     line-height: 27px;
 }
-.sidenav a:hover {color: var(--teal-d1);}
+.sidenav a:hover {color: var(--blue-d1);}
 .sidenav .closebtn{
     position: absolute;
     top: 10px;
@@ -139,12 +141,12 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     font-size: 2rem;
     margin-right: 10px;
 }
-.menu-button a:hover{color: var(--teal);}
+.menu-button a:hover{color: var(--blue);}
 
 /*HERO*/
 .hero {
     padding: 255px 0 0;
-    background-color: var(--teal);
+    background-color: var(--blue);
     background-size: 100% 1076px;
     background-repeat: no-repeat;
     color: var(--white);
@@ -207,7 +209,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     color: var(--white);
     background-color: var(--color-1);
     text-align: left; 
-    box-shadow: 0 0 20px var(--teal);
+    box-shadow: 0 0 20px var(--blue);
     font-family: var(--font-lora);
     font-weight: 700;
     font-size: 1.1rem;
@@ -220,7 +222,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     padding: 10px 10px 17px;
     max-width: 349px;
     height: 100%;
-    color: var(--teal);
+    color: var(--blue);
 }
 .hero-bottom img {display: block;width: 100%;border:1px solid var(--white);}
 .hero-bottom h4{
@@ -242,11 +244,10 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--teal-d2);
+    color: var(--blue-d2);
 }
 .hero-bottom a:hover, .hero-bottom a:active{
-    color: var(--black);
-   
+    color: var(--black); 
 }
 
 /*Button to top*/
@@ -257,18 +258,18 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     right: 30px;
     z-index: 99; 
     font-size: 2rem;
-    border:  2px solid var(--teal-d2);
+    border:  2px solid var(--blue-d2);
     outline: none; 
-    background-color: var(--teal-2); 
+    background-color: var(--blue-2); 
     color: var(--white);
     cursor: pointer; 
     padding: 6px 15px; 
     border-radius: 50%; 
 } 
 #myBtn:hover {
-    background-color: var(--teal);
+    background-color: var(--blue);
     color: var(--white);
-    border: 2px solid var(--teal);
+    border: 2px solid var(--blue);
 }
 
 /*contacts*/
@@ -296,7 +297,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     padding: 50px;
     min-width: 330px;
     height: 100%;
-    color: var(--teal-d3);
+    color: var(--blue-d3);
     background-color: var(--white);
     text-align: left; 
     box-shadow: 0 0 20px var(--color-1);
@@ -331,7 +332,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     width: 100%;
     border: none;
     background-color: var(--color-1);
-    color: var(--teal-d2);
+    color: var(--blue-d2);
 }
 .contacts form textarea{
     margin-top: 30px;
@@ -340,7 +341,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     width: 100%;
     border: none;
     background-color: var(--color-1);
-    color: var(--teal-d2);
+    color: var(--blue-d2);
 }
 .contacts form input[type=submit]{
     margin-top: 30px;

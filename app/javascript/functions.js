@@ -8,16 +8,16 @@ function closeNav() {
 
 //Get the button:
 var mybutton = document.getElementById("myBtn");
-var scrollHeader = document.getElementById("orange-bg-top");
-// When the user scrolls down 20px from the top of the document, show the button
+var scrollHeader = document.getElementById("dark-header");
+// When the user scrolls down 100px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     mybutton.style.display = "block";
-    scrollHeader.style.display = "none";
+    scrollHeader.style.backgroundColor = "#11162efa";
   } else {
     mybutton.style.display = "none";
-    scrollHeader.style.display = "block";
+    scrollHeader.style.backgroundColor = "#101426b2";
   }
 }
 
