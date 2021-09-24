@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Freelancer - Web Developer">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Wordpress">
-    <meta name="author" content="Grumin">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c630c8eb00.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="app/css/normalize.css">
-    <link rel="stylesheet" href="app/css/style.css">
-</head>
-<body>
-<header class="site-header" id="dark-header">
-    <div class="container flex-container">
-        <div  class="logo">
-            <a href="index.html">Grumin</a> 
-        </div>
-        <nav class="top-nav">
-            <ul class="flex-container">
-                <li><a href="#contacts-map">Contacts</a></li>
-            </ul>
-        </nav>
-        <div id="menu" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#contacts-map">Contacts</a>
-        </div>
-        <div class="menu-button">
-            <a href="javascript:void(0)" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        </div>
-    </div>
-</header>
 <section class="row hero">
     <div id="particles-js"></div>
     <div class="container hero-text" id="orange-bg-top">
@@ -98,18 +62,4 @@
             <button name="submit" type="submit" id="test">SEND MESSAGE</button>
         </form>
     </div>
-</section>
-<footer class="row">
-    <div class="container">
-        <a href="">Grumin</a>
-        <span>© 2020</span> 
-        <a href="https://github.com/grum1n"><i class="fab fa-github"></i></a>
-        <a href="http://www.linkedin.com/in/mindaugas-grūšas-52a873210" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-</footer>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
-<script src="app/javascript/min.js"></script>
-<script src="app/javascript/animated-bg-function.js"></script>
-<script src="app/javascript/functions.js"></script>    
-</body>
-</html>
+</section>  

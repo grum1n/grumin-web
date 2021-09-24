@@ -97,8 +97,9 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     position: relative;
     padding: 8px 30px;
     border-radius: 3px;
+    border:1px solid var(--blue-g06);
 }
-.top-nav a:hover, .top-nav a:active {color:var(--gray);background-color: var(--blue-g7);}
+.top-nav a:hover, .top-nav a:active {color:var(--gray);background-color: var(--blue-g7);border:1px solid var(--gray);}
 .icon-x, .sidenav .icon-x{
     font-size: 0.7rem;
     margin: 8px 25px 0 9px;
@@ -210,28 +211,24 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     max-width: 349px;
     height: 100%;
     color: var(--white);
-    background-color: var(--color-1);
+    background-color: var(--color-2);
     text-align: left; 
-    box-shadow: 0 0 20px var(--blue);
     font-family: var(--font-lora);
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.1rem;
     line-height: 19px;
     border-radius: 5px;
     position: relative;
 }
 .hero-bottom li:hover {
-    margin: 15px;
-    padding: 10px 10px 17px;
-    max-width: 349px;
-    height: 100%;
-    color: var(--blue);
+    background-color: var(--color-1);
+    box-shadow: 0 0 10px var(--blue-g7);
 }
 .hero-bottom img {display: block;width: 100%;border:1px solid var(--white);}
 .hero-bottom h4{
     margin: 19px 0 0;
     font-family: var(--poppins-font);
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.5rem;
     line-height: 40px;
     color: var(--white);
