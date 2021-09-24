@@ -9,6 +9,7 @@
     --blue-2: rgba(7, 28, 73, 0.8);
     --white: #ffffff; 
     --blue-g06: #7e8ab3;
+    --blue-g7: #545f85;
     --blue-d1: #050f1f;
     --blue-d2: #050d13;
     --teal-d3: #021111;
@@ -84,10 +85,10 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     line-height: 52px;
     cursor: pointer;
 }
-.logo > a:hover{color: var(--blue-d1);}
+.logo > a:hover{color: var(--gray);}
 .top-nav a {
     color: var(--white);
-    background-color: var(--blue-d1);
+    background-color: var(--blue-g06);
     font-family: var(--font-roboto);
     font-weight: 400;
     font-size: 1.5rem;
@@ -97,7 +98,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     padding: 8px 30px;
     border-radius: 3px;
 }
-.top-nav a:hover, .top-nav a:active {color:var(--white);background-color: var(--color-2);}
+.top-nav a:hover, .top-nav a:active {color:var(--gray);background-color: var(--blue-g7);}
 .icon-x, .sidenav .icon-x{
     font-size: 0.7rem;
     margin: 8px 25px 0 9px;
@@ -262,16 +263,16 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     font-size: 2rem;
     border:  2px solid var(--white);
     outline: none; 
-    background-color: var(--blue-2); 
+    background-color: var(--blue-g06); 
     color: var(--white);
     cursor: pointer; 
     padding: 6px 15px; 
     border-radius: 50%; 
 } 
 #myBtn:hover {
-    background-color: var(--blue);
+    background-color: var(--blue-g7);
     color: var(--gray);
-    border: 2px solid var(--blue);
+    border: 2px solid var(--blue-g7);
 }
 /*contacts*/
 
