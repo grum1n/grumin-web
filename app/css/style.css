@@ -72,7 +72,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     content:"";
     display: block;
     width: 100px;
-    border-top: 3px solid var(--blue);
+    border-top: 3px solid var(--blue-2);
     margin: 22px auto 32px;
 }
 /*HEADER*/
@@ -127,7 +127,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     position: relative;
     line-height: 27px;
 }
-.sidenav a:hover {color: var(--blue-d1);}
+.sidenav a:hover {color: var(--gray);}
 .sidenav .closebtn{
     position: absolute;
     top: 10px;
@@ -144,7 +144,7 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     font-size: 2rem;
     margin-right: 10px;
 }
-.menu-button a:hover{color: var(--blue);}
+.menu-button a:hover{color: var(--gray);}
 
 /*HERO*/
 .hero {
@@ -275,8 +275,42 @@ h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
     border: 2px solid var(--blue-g7);
 }
 /*contacts*/
-
-
+.contacts {
+    text-align: center;
+    padding-top: 123px;
+    padding-bottom: 100px;
+    background-color: var(--gray-d8);
+}
+.contacts  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contacts  li {
+    margin: 15px;
+    padding: 50px;
+    height: 100%;
+    color: var(--gray-d);
+    background-color: var(--white);
+    text-align: left; 
+    box-shadow: 0 0 20px var(--color-1);
+    font-family: var(--font-lora);
+    font-weight: 700;
+}
+.contacts  h4{
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 1.6875rem;
+    line-height: 40px;
+}
+.contacts  h5{
+    width: 240px;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 34px;
+    color: var(--gray-c2);
+}
 /*FOOTER*/
 footer {
     color: var(--gray);
@@ -329,6 +363,14 @@ footer i {padding: 0 20px;font-size: 2rem;}
     .hero-bottom li {height: 100%;}
     .hero-bottom a{margin-top: 35px;}
     .hero h1{padding: 0;}
+    /*conatcts*/
+    .contacts  h5{
+        width: 220px;
+    } 
+    .contacts  li {
+        margin: 15px 0;
+        padding: 30px;
+    }
 }
 @media screen and (max-width: 350px) {
     /*HERO*/
