@@ -27,3 +27,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function showMessage() {
+  document.getElementById("message-send").innerHTML = "Thanks for message !";
+}
+

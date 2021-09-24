@@ -3,6 +3,7 @@
     <div class="container hero-text" id="orange-bg-top">
         <h1>Frontend developer </h1>
         <p class="text-poppins-400">A Designer & Developer Making the Web a Better Place.</p>
+        <p id="message-send"></p>
     </div>
     <div class="container flex-between">
         <i class="fas fa-long-arrow-alt-down"></i>

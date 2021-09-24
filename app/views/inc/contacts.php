@@ -28,7 +28,7 @@
             <input type="email" name="email" placeholder="Your email" required>
             <input type="text" name="subject" placeholder="Title" required>
             <textarea name="message" placeholder="Message" required></textarea>
-            <button name="submit" type="submit" id="test">SEND MESSAGE</button>
+            <button name="submit" type="submit" onclick="showMessage()">SEND MESSAGE</button>
         </form>
     </div>
 </section>  
