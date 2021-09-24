@@ -347,6 +347,13 @@ footer i {padding: 0 20px;font-size: 2rem;}
      /*HERO*/
      .hero {padding: 200px 0 0;}
 }
+@media screen and (max-width: 770px){
+    /*contacts*/
+    .contacts {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+}
 @media screen and (max-width: 650px) {
     /*HERO*/
     .hero .hero-text{text-align:center; padding-left: 20px;}
