@@ -1,7 +1,7 @@
 <header class="site-header" id="dark-header">
     <div class="container flex-container">
         <div  class="logo">
-            <a href="index.html">Grumin</a> 
+            <a href="index.php">Grumin</a> 
         </div>
         <nav class="top-nav">
             <ul class="flex-container">
